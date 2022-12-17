@@ -1,0 +1,56 @@
+#us{
+    background-image: url('../../assets/imgs/heart.gif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+#us::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #e2a8fe;
+    opacity: .8;
+    z-index: 0;
+}
+
+#us .col{
+    z-index: 99;
+}
+
+.wrapper--card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card--head{
+    height: 345px;
+    width: 345px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.card--head img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card--body p{
+    text-align: center;
+    padding: 0 400px;
+}
+
+@media (max-width: 991px){
+    .card--body p{
+        padding: 0 20px;
+    }
+}
